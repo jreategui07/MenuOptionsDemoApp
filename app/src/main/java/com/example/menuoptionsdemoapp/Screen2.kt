@@ -20,8 +20,8 @@ class Screen2 : AppCompatActivity() {
         }
     }
 
+    // The onOptionsItemSelected function is used to handle clicks on each item in the options menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle menu item selection
         return when (item.itemId) {
             android.R.id.home -> { // The name of the back button is: android.R.id.home
                 this.finish();

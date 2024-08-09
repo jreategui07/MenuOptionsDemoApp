@@ -39,32 +39,26 @@ class MainActivity : AppCompatActivity() {
 
     // The onOptionsItemSelected function is used to handle clicks on each item in the options menu
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        // Handle item selection.
         return when (item.itemId) {
             R.id.mi_new_tab -> {
-                // do something
                 val snackBar = Snackbar.make(binding.root, "Opening a new tab...", Snackbar.LENGTH_LONG)
                 snackBar.show()
                 true
             }
             R.id.mi_new_incognito_tab -> {
-                // do something
                 goToNextPage()
                 true
             }
             R.id.mi_history -> {
-                // do something
                 true
             }
             R.id.mi_clear_browsing_data -> {
-                // do something
                 true
             }
             else -> super.onOptionsItemSelected(item)
         }
     }
-
-
+    
     private fun goToNextPage() {
         val intent: Intent = Intent(this@MainActivity, Screen2::class.java)
         startActivity(intent)
