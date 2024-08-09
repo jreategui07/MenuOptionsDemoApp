@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
             else -> super.onOptionsItemSelected(item)
         }
     }
-    
+
     private fun goToNextPage() {
         val intent: Intent = Intent(this@MainActivity, Screen2::class.java)
         startActivity(intent)
