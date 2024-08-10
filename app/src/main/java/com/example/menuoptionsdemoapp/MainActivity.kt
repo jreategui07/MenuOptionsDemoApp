@@ -2,13 +2,11 @@ package com.example.menuoptionsdemoapp
 
 import android.content.Intent
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuInflater
 import android.view.MenuItem
 import androidx.appcompat.app.AppCompatActivity
 import com.example.menuoptionsdemoapp.databinding.ActivityMainBinding
-import com.example.menuoptionsdemoapp.databinding.ActivityScreen2Binding
 import com.google.android.material.snackbar.Snackbar
 
 class MainActivity : AppCompatActivity() {
